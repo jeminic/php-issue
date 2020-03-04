@@ -1,0 +1,695 @@
+.hero {
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    width: 100%;
+    padding: 100px 0;
+    padding-left: 200px;
+    vertical-align: middle;
+    bottom: 0;
+}
+
+.hero h1 {
+    font-size: 65px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(rgb(255, 238, 0), rgb(192, 173, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    color: white;
+    margin-top: 30px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero a {
+    color: rgb(236, 195, 11);
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    line-height: 10px;
+    max-width: 80%;
+}
+
+.hero a::after {
+    border-bottom: 1px solid rgb(236, 195, 11);
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: .14em;
+    left: 0;
+    border-radius: 1em;
+    margin-top: 10px;
+    transition: right .4s cubic-bezier(0, .5, 0, 1);
+}
+
+.hero a:hover::after {
+    text-decoration: none;
+    right: 0;
+}
+
+.hero i {
+    background: -webkit-linear-gradient(rgb(255, 238, 0), rgb(192, 173, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 20px;
+}
+
+.imageBox {
+    background-color: rgb(0, 0, 0);
+    /* border: 3px solid rgb(255, 215, 0); */
+    border-top: none;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.imageBox img {
+    height: 500px;
+    line-height: 20px;
+}
+
+
+/* .mySlides {
+                        display: none;
+                    }
+                     */
+
+
+/* .prev,
+                    .next {
+                        cursor: pointer;
+                        position: absolute;
+                        top: 50%;
+                        width: 50px;
+                        height: 50px;
+                        margin-top: -22px;
+                        padding: 12px;
+                        color: white;
+                        font-weight: bold;
+                        font-size: 18px;
+                        transition: 0.6s ease;
+                        border-radius: 50%;
+                        user-select: none;
+                        background-color: #e09509;
+                    }
+
+                    .next {
+                        right: 0;
+                        border-radius: 50%;
+                    }
+
+                    .prev {
+                        left: 0;
+                        border-radius: 50%;
+                    }
+
+                    .prev:hover,
+                    .next:hover {
+                        background-color: rgba(0, 0, 0, 0.8)
+                    } */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.9s;
+    animation-name: fade;
+    animation-duration: 2.9s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .6
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .6
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.voteButton {
+    background: -webkit-linear-gradient(rgb(255, 238, 0), rgb(255, 215, 0));
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+}
+
+.voteButton:hover {
+    transform: scale(1.1);
+}
+
+.voteContent {
+    padding: 50px;
+    text-align: center;
+}
+
+.voteContent h2 {
+    font-size: 55px;
+    font-weight: 700;
+    color: black;
+}
+
+.voteContent p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #717171;
+    margin-top: -12px;
+}
+
+.voteInfo {
+    display: inline-block;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.voteInfo h3 {
+    margin-bottom: 20px;
+}
+
+.voteInfo p {
+    margin-top: -15px;
+}
+
+.voteInfo button {
+    padding: 5px;
+    color: black;
+    border: none;
+    background: -webkit-linear-gradient(rgb(255, 238, 0), rgb(255, 215, 0));
+    width: 100px;
+    transition: all .2s ease-in-out;
+    font-weight: 500;
+}
+
+.voteInfo button:hover {
+    transform: scale(1.1);
+}
+
+.startButton {
+    padding: 15px;
+    margin-top: 15px;
+    border: none;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.startButton:hover {
+    transform: scale(1.1);
+}
+
+.voteCard {
+    height: auto;
+    padding: 10px 10px;
+    display: inline-block;
+}
+
+.voteCard .cardContent {
+    padding: 10px;
+    height: 100%;
+    background-color: black;
+    margin: 2px;
+    border-bottom: 5px solid rgb(255, 215, 0);
+}
+
+.imgBox {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin-left: -10px;
+    /* margin-right: 10px; */
+    display: inline-block;
+}
+
+.imgBox img {
+    height: 100%;
+    width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .hero {
+        padding: 25px;
+        padding-top: 25px;
+    }
+    .imageBox img {
+        height: 300px;
+    }
+    .imageBox {
+        height: 300px;
+        border-top: none;
+    }
+    .hero {
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 45px;
+    }
+    .hero p {
+        font-size: 12px;
+    }
+    .voteContent {
+        padding: 15px;
+    }
+    .voteContent h2 {
+        font-size: 45px;
+    }
+    .voteContent p {
+        font-size: 14px;
+    }
+    .voteCard {
+        display: block;
+    }
+    .imgBox {
+        display: block;
+        height: 50%;
+        height: 50%;
+        text-align: center;
+    }
+    .imgBox img {
+        height: 100%;
+        width: 80%;
+    }
+    .voteInfo {
+        text-align: center;
+    }
+    .voteInfo button {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .hero {
+        padding-left: 25px;
+        display: inline-block;
+    }
+    .imageBox {
+        display: inline-block;
+    }
+}
+
+
+/* dashboard styling  */
+
+.header {
+    background-color: black;
+}
+
+
+/* Navbar container */
+
+.navbarItems {
+    float: right;
+    /* overflow: hidden; */
+    background-color: rgb(0, 0, 0);
+    font-family: Arial;
+}
+
+
+/* The dropdown container */
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color: #f1f1f1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+/* Links inside the navbar */
+
+.navbarItems a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Dropdown button */
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+
+/* Add a red background color to navbar links on hover */
+
+.navbarItems a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(255, 179, 0);
+    color: black;
+    font-weight: 400;
+}
+
+
+/* Dropdown content (hidden by default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+/* Add a grey background color to dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .header h1 {
+        text-align: center;
+    }
+}
+
+
+/* content container styling  */
+
+.contentContainer {
+    background-color: #121212;
+    width: 100%;
+    position: absolute;
+}
+
+.contentContaineer {
+    background-color: #121212;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+.loginArea {
+    justify-content: center;
+    margin-top: 70px;
+}
+
+
+/*  cards container  */
+
+.cardsContainer {
+    height: 100%;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.cards {
+    height: 100%;
+    width: 100%;
+    background-color: #1d1d1d;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cards i {
+    font-size: 50px;
+}
+
+.cards h2 {
+    float: right;
+    padding: 10px;
+}
+
+.amount {
+    background: rgb(255, 188, 0);
+    background: linear-gradient(90deg, rgba(255, 188, 0, 1) 0%, rgba(255, 171, 0, 1) 100%);
+    color: black;
+}
+
+.amount i {
+    color: black;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .cards {
+        margin-bottom: 10px;
+    }
+    .navbarItems {
+        background-color: #1d1d1d;
+        width: 100%;
+        margin: auto 0px;
+        justify-content: center;
+        box-shadow: 0px 45px 30px -13px rgba(0, 0, 0, 0.75);
+    }
+    .navContainer {
+        padding: 0px;
+        margin-top: 15px;
+    }
+}
+
+
+/* Second row styling starts here */
+
+.secondRow {
+    padding: 15px;
+}
+
+.formCard {
+    margin-top: 30px;
+    background-color: #1d1d1d;
+    padding: 15px;
+    border-radius: 5px;
+    height: auto;
+}
+
+.formCard h1 {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.formCard p {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.formCard a {
+    color: rgb(236, 195, 11);
+    font-size: 15px;
+    text-decoration: none;
+    position: relative;
+    line-height: 10px;
+    max-width: 80%;
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    transition-property: font-size;
+    transition-property: color;
+    transition-duration: 1.7s;
+}
+
+.formCard a:hover {
+    transition-property: font-size;
+    transition-property: color;
+    transition-duration: 2.7s;
+    font-size: 18px;
+}
+
+.inputDetails {
+    display: block;
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #121212;
+    height: 50px;
+    color: white;
+    outline: none;
+}
+
+.inputDetails::placeholder {
+    padding-left: 20px;
+    color: white;
+}
+
+.inputDetails:active {
+    color: white;
+}
+
+.listCards {
+    margin-top: 30px;
+    background-color: #1d1d1d;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.listCards table {
+    width: 100%;
+}
+
+.listCards table thead {
+    background: linear-gradient(90deg, rgba(255, 188, 0, 1) 0%, rgba(255, 171, 0, 1) 100%);
+    color: black;
+}
+
+.listCards table tbody {
+    color: white;
+}
+
+.listCards table tbody td img {
+    height: 50px;
+    width: 50px;
+}
+
+.btn-submit {
+    background: linear-gradient(90deg, #ffbc00 0%, rgba(255, 171, 0, 1) 100%);
+    color: black;
+    padding: 10px;
+    border: none;
+    width: 120px;
+    font-weight: 700;
+    display: block;
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.overallModal {
+    background-color: #121212;
+    color: white;
+}
+
+.inputtt {
+    color: #f9f9f9;
+    display: block;
+    width: 100%;
+    background-color: #1d1d1d;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.inputtt::placeholder {
+    padding-left: 10px;
+    color: #f9f9f9;
+}
+
+.modal-body button {
+    background: linear-gradient(90deg, #ffbc00 0%, rgba(255, 171, 0, 1) 100%);
+    color: black;
+    padding: 10px;
+    border: none;
+    width: 120px;
+    font-weight: 700;
+    display: block;
+    margin-top: 20px;
+}
+
+.modal-body .droopdown {
+    width: 100%;
+    background-color: #1d1d1d;
+    color: white;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .btn-submit {
+        display: block;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+}
