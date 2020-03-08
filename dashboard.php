@@ -93,8 +93,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <hr style="background-color: white;">
                             <p>Lowest contender</p> 
                             <p style="margin-top:-10px; color: rgb(255, 188, 0); font-weight: 700;"> <?php include 'lowest.php' ?> </p>
-                            
-                            
+                                                       
                         </div>
                     </div>
                 </div>
